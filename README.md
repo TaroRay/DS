@@ -8,7 +8,7 @@
 20250225 建立test資料夾並用python add folder匯入，接著根據老師提供之command指令安裝venv環境、執行venv，並且把autogen資料夾放到test底下，建立一個.env的檔案並且到gemini api網站取得token後在env裡面輸入 GEMINI_API_KEY "金鑰" 讓main.py可以在指向此檔案時獲取金鑰內容。  
 20250304 dataagent讓三個程式相互對話執行。
 # 作業連結區
-  1.  [H.W1][程式碼](https://github.com/TaroRay/DS/tree/main/20250304autogen_project-main)[設計圖](https://drive.google.com/file/d/1VUwOVmaLiVNr1auMD2WT5QvJlFO-FWmG/view?usp=sharing)
+  1.  H.W1[程式碼](https://github.com/TaroRay/DS/tree/main/20250304autogen_project-main)  [設計圖](https://drive.google.com/file/d/1VUwOVmaLiVNr1auMD2WT5QvJlFO-FWmG/view?usp=sharing)
   2.  [H.W2]()
   3.  [H.W3]()  
   4.  [H.W4]()
