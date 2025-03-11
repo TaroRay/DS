@@ -6,10 +6,10 @@
    一個簡單的範例，透過 Gemini 模型回答單一查詢（"What is the capital of France?"）。
 
 2. **multiAgent.py**  
-   一個多代理人協作對話範例，利用 RoundRobinGroupChat 將三個代理人（Assistant、WebSurfer 與 UserProxy）組成團隊，完成「請搜尋 Gemini 的相關資訊，並撰寫一份簡短摘要」的任務。  
+   一個多代理人協作對話範例，利用 RoundRobinGroupChat 將三個代理人（Assistant、WebSurfer 與 UserProxy）組成團隊，完成「請搜尋 Gemini 的相關資訊，並撰寫一份簡短摘要」的任務。
 
 3.**dataagent.py**
-   在這裡將老師原本資料替換成807班級成績的評估，原始資料並非為數字資料，為A+~C的等第呈現，透過AIAGENT的分析做出科目的評估，透過prompt的對話請ai做出各科目的評估與建議。
+   在這裡將老師原本資料替換成807班級成績的評估，原始資料並非為數字資料，為A+~C的等第呈現，透過AIAGENT的分析做出科目的評估，透過prompt的對話請ai做出各科目的評估與建議。  
 ---
 
 ## 目錄
