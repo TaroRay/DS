@@ -11,7 +11,7 @@
 # 作業連結區
   1.  H.W1 [程式碼](https://github.com/TaroRay/DS/tree/main/20250304autogen_project-main)  [設計圖](https://drive.google.com/file/d/1VUwOVmaLiVNr1auMD2WT5QvJlFO-FWmG/view?usp=sharing)
   2.  H.W2 [程式碼](https://github.com/TaroRay/DS/blob/main/HW2/H.W2.py) [逐字稿](https://github.com/TaroRay/DS/blob/main/HW2/engineering_interview.csv) [產生結果](https://github.com/TaroRay/DS/blob/main/HW2/engineer_output.csv) 作業說明：我透過AI agent 分析一段工程設計訪談逐字稿，並依據訪談中出現的工程設計相關項目計次產生量化結果  
-  3.  H.W3  
+  3.  H.W3 [程式碼](https://github.com/TaroRay/DS/blob/main/HW3/postAI.py) 
   4.  H.W4
   5.  H.W5
 # 專題連結區
