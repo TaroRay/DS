@@ -10,7 +10,7 @@
 20250325 自動機器人在fb上po文 [程式碼](https://github.com/TaroRay/DS/blob/main/postAI.py)
 # 作業連結區
   1.  H.W1 [程式碼](https://github.com/TaroRay/DS/tree/main/20250304autogen_project-main)  [設計圖](https://drive.google.com/file/d/1VUwOVmaLiVNr1auMD2WT5QvJlFO-FWmG/view?usp=sharing)
-  2.  H.W2 [程式碼](https://github.com/TaroRay/DS/blob/main/HW2/H.W2.py) [逐字稿](https://github.com/TaroRay/DS/blob/main/HW2/engineering_interview.csv) [產生結果](https://github.com/TaroRay/DS/blob/main/HW2/engineer_output.csv)
+  2.  H.W2 [程式碼](https://github.com/TaroRay/DS/blob/main/HW2/H.W2.py) [逐字稿](https://github.com/TaroRay/DS/blob/main/HW2/engineering_interview.csv) [產生結果](https://github.com/TaroRay/DS/blob/main/HW2/engineer_output.csv)  
   ![image](https://github.com/TaroRay/DS/blob/main/HW2/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-03-31%20092453.png)
   作業說明：我透過AI agent 分析一段工程設計訪談逐字稿，並依據訪談中出現的工程設計相關項目計次產生量化結果  
   4.  H.W3 [程式碼](https://github.com/TaroRay/DS/blob/main/HW3/postAI.py) [執行影片](https://youtu.be/saoQCZc5FUw)
