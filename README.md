@@ -22,4 +22,5 @@
       ![image](https://github.com/TaroRay/DS/blob/main/HW4/HW4.jpg)
   7.  H.W5
 # 專題連結區
-[Final project]()
+Final project  
+[第一次審查](https://www.youtube.com/watch?v=HNZi0XfPRjk)  
