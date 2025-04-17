@@ -21,6 +21,7 @@
       截圖：  
       ![image](https://github.com/TaroRay/DS/blob/main/HW4/HW4.jpg)
   7.  H.W5 [app.py](https://github.com/TaroRay/DS/blob/main/HW5/app.py) [EMOwithSnow.py](https://github.com/TaroRay/DS/blob/main/HW5/EMOwithSnow.py) [multiagent.py](https://github.com/TaroRay/DS/blob/main/HW5/multiagent.py) [student_aspect_sequence.py](https://github.com/TaroRay/DS/blob/main/HW5/student_aspect_sequence.py)  [執行影片1](https://youtu.be/87l_D5a-DK0) [執行影片2](https://youtu.be/Rrk7Tg2s-bc)
+作業說明：工程設計逐字稿上傳至前端網頁，透過AIAGENT分析文句後歸納類別後產生圖表，並針對產生之結果提出結論與建議。
 # 專題連結區
 Final project  
 [第一次審查](https://www.youtube.com/watch?v=HNZi0XfPRjk)  
