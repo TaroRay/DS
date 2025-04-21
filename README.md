@@ -25,3 +25,4 @@
 # 專題連結區
 Final project  
 [第一次審查](https://www.youtube.com/watch?v=HNZi0XfPRjk)  
+[第二次審查](https://youtu.be/HVR233aHdG8)
