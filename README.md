@@ -1,7 +1,7 @@
 # 113-2 師大科技系資料結構  
   > 授課教師：蔡芸琤老師  [老師的github](https://github.com/peculab/)
 
-# 專題連結區
+# 期末專題連結區
 Final project  
 [第一次審查](https://www.youtube.com/watch?v=HNZi0XfPRjk)  
 [第二次審查](https://youtu.be/HVR233aHdG8) 程式碼 [app.py](https://github.com/TaroRay/DS/blob/main/HW5/app.py) [EMOwithSnow.py](https://github.com/TaroRay/DS/blob/main/HW5/EMOwithSnow.py) [multiagent.py](https://github.com/TaroRay/DS/blob/main/HW5/multiagent.py) [student_aspect_sequence.py](https://github.com/TaroRay/DS/blob/main/HW5/student_aspect_sequence.py)  
