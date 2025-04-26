@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>工程設計逐字稿分析</title>
+  <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #f0f2f5;
+      color: #333;
+      font-size: 30px;
+      background: linear-gradient(135deg, #b2ebf2, #f8bbd0);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 0 auto 30px;
+      max-width: 500px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 22px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #status {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      max-width: 700px;
+      margin: auto;
+      white-space: pre-line;
+    }
+
+    img {
+      display: block;
+      max-width: 90%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin: 20px auto;
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #ai-feedback-container {
+      max-width: 1050px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      display: none;
+    }
+
+    #ai-feedback-text {
+      white-space: pre-wrap;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      form, #status, #ai-feedback-container {
+        width: 100%;
+        padding: 15px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+   
+  <h2>🧪 工程設計逐字稿分析系統</h2>
+
+  <form id="upload-form" enctype="multipart/form-data">
+    <label for="file">📂 選擇逐字稿 CSV 檔案</label>
+    <input type="file" id="file" name="file" accept=".csv" required>
+    <button type="submit">🚀 上傳並分析</button>
+  </form>
+
+  <div id="status"></div>
+
+  <h3>📈 情緒趨勢圖</h3>
+  <img id="moodtrend" src="" alt="尚未產生情緒圖">
+
+  <h3>🛠️ 工程構面比例圖</h3>
+  <img id="aspect_bar" src="" alt="尚未產生構面圖">
+
+  <div id="ai-feedback-container">
+    <h3>💡 AI 給全班的學習建議</h3>
+    <p id="ai-feedback-text"></p>
+  </div>
+
+  <script>
+    const socket = io();
+
+    socket.on("status", function (data) {
+      const statusBox = document.getElementById("status");
+      statusBox.innerText += data.message + "\n";
+    });
+
+    socket.on("result", function (data) {
+      if (data.moodtrend_img) {
+        document.getElementById("moodtrend").src = data.moodtrend_img;
+      }
+      if (data.aspect_bar_img) {
+        document.getElementById("aspect_bar").src = data.aspect_bar_img;
+      }
+      if (data.ai_feedback) {
+        document.getElementById("ai-feedback-text").innerText = data.ai_feedback;
+        document.getElementById("ai-feedback-container").style.display = "block";
+      }
+    });
+
+    document.getElementById("upload-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData();
+      const fileInput = document.getElementById("file");
+      formData.append("file", fileInput.files[0]);
+
+      fetch("/upload", {
+        method: "POST",
+        body: formData,
+      }).then((res) => {
+        document.getElementById("status").innerText = "✅ 檔案已上傳並開始分析...\n";
+      });
+    });
+  </script>
+</body>
+</html>
